@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NNostr.Client", "NNostr.Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NNostr.Tests", "NNostr.Tests\NNostr.Tests.csproj", "{8CB3C821-354F-4CAA-90BE-D5DA201394D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NNostr.ConsoleTests", "NNostr.ConsoleTests\NNostr.ConsoleTests.csproj", "{2A98B803-814C-42E7-91D5-430D13B1DD8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8CB3C821-354F-4CAA-90BE-D5DA201394D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CB3C821-354F-4CAA-90BE-D5DA201394D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CB3C821-354F-4CAA-90BE-D5DA201394D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A98B803-814C-42E7-91D5-430D13B1DD8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A98B803-814C-42E7-91D5-430D13B1DD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A98B803-814C-42E7-91D5-430D13B1DD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A98B803-814C-42E7-91D5-430D13B1DD8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
