@@ -1,20 +1,31 @@
 version: "3"
 services:
+
   relay:
     depends_on:
       - postgres
     build:
-      context: ..
       dockerfile: Dockerfile
-    env_file:
-      - .env
     environment:
       ASPNETCORE_ENVIRONMENT: "Development"
       ASPNETCORE_URLS: "http://0.0.0.0:80"
       NOSTR_CONNECTIONSTRINGS__RelayDatabase: "User ID=postgres;Host=postgres;Port=5432;Database=nostrrelay"
     volumes:
-      - nnostr_datadir:/datadir
+      - "nnostr_datadir:/datadir"
     ports:
       - "5000:80"
+
+  postgres:
+    image: postgres:13.10
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+        - "postgres_datadir:/var/lib/postgresql/data"
+    ports:
+      - "65466:5432"
+    expose:
+      - "5432"
+
 volumes:
-  - nnostr_datadir:
+  postgres_datadir:
+  nnostr_datadir:
