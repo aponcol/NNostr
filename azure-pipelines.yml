@@ -25,4 +25,5 @@ stages:
         containerregistrytype: 'Azure Container Registry'
         dockerComposeFile: 'docker-compose.yml'
         action: 'Run a Docker Compose command'
+        dockerComposeCommand: 'docker compose up'
 
